@@ -1,0 +1,12 @@
+NOTE: In all workloads, if an error occurs during malloc or free,
+the user is notified through an error message telling them they
+are doing wrong.
+
+1. Large workload
+  Try to malloc the whole memory of 4096 bytes, 
+  to see if whole memory can be allocated.
+
+2. Invalid workload
+  Try to malloc 0 size block, which is not correct.
+  Try to free NULL pointer, which is not correct.
+  Try to free pointer, which is set inside the allocated block, ex. (ptr + 10).
