@@ -33,7 +33,7 @@ The end of memory is marked with a used block, of size 0. This way we can iterat
 
 => The data part is returned to user, so he can use it.
 
-⌘ User can call two memorey functions - malloc and free.
+⌘ User can call two memory functions - malloc and free.
 
 => malloc searches for a free block, and if found, its marked as used, and returned to user.
 If the block is too large, we split it in two. First block goes to user, and the second is marked, as free,with reduced size.
